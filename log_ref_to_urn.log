@@ -1,0 +1,210 @@
+WARNING:root:Work not recognized for plautus bacch. 4.9.22
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with callimachus hymn._dian. 193. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="πεδία_30"> is the acc. describing the ground traversed (as we can say, ‘to walk the earth’): <ref n="Soph. Aj. 845">cp. 845</ref>: <ref n="Aesch. PB 708">Aesch. <title>P. V.</title> 708</ref> <quote xml:lang="grc">στεῖχ’ ἀνηρότους γύας</quote>: <title>Helen.</title> 598 <quote xml:lang="grc">πᾶσαν πλανηθεὶς τήνδε βάρβαρον χθόνα</quote>: <cit> <bibl n="Call. Dian. 103">Callim. <title>Hymn. Dian.</title> 193</bibl> <quote xml:lang="grc">ἐφοίτα | παίπαλά τε κρημνούς τε</quote> </cit> .</gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:Problem where n attribute is
+app. bc 4.4.19
+and bibl element is
+appian bell. civ. 4. 19
+
+WARNING:root:Work not recognized for aeschines or. 1.59
+WARNING:root:Work not recognized for plautus bacch. 4.7.24
+WARNING:root:Work not recognized for aeschines or. 3.184
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with callimachus hymn._cer. 68. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="αἴθονος_221">, ‘fiery’; <ref n="Soph. Aj. 1088">cp. 1088</ref>: <ref n="Aesch. Seven 448">Aesch. <title>Theb.</title> 448</ref> <quote xml:lang="grc">αἴθων..λῆμα</quote>: in v. 147 the word is applied to a bright sword. This inflexion (instead of <quote xml:lang="grc">αἴθωνος</quote>) occurs elsewhere only in <ref n="Hes. WD 361">Hes. <title>Op.</title> 361</ref> <quote xml:lang="grc">αἴθονα λιμόν</quote> (Bergk's correction of the MS. <quote xml:lang="grc">αἴθοπα</quote>), a reading which is made certain by <cit> <bibl n="Aeschin. 3.184">Aeschin. or. 3 § 184</bibl> <quote xml:lang="grc">λιμόν τ’ αἴθωνα κρατερόν τ’ ἐπάγοντες Ἄρηα</quote> </cit>, and <cit> <bibl n="Call. Cer. 68">Callim. <title>Hymn. Cer.</title> 68</bibl> <quote xml:lang="grc">ἔμβαλε λιμόν, | αἴθωνα, κρατερόν</quote> </cit>: where the fig. sense of the epithet is ‘fierce.’</gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:wrong format for citation for ref: theocritus 9.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="κεφαλὴν_ἄκραν_238">. He first shears off the head; then, still holding it, while the carcass drops to the ground, cuts off the end of the tongue; and next hurls both head and tongue from him. <quote xml:lang="grc">ἄκρα γλῶσσα</quote> can mean the extremity, the tip, of the tongue, as in <cit> <bibl n="Theoc. 9">Theocr. 9. 30</bibl> <quote xml:lang="grc">ἐπὶ γλώσσας ἄκρας</quote> </cit>: so in <ref n="Soph. Phil. 748"> <title>Ph.</title> 748</ref> <quote xml:lang="grc">ἄκρον πόδα</quote> is the heel. It could not mean, ‘the tongue from the roots,’ <quote xml:lang="grc">γλῶσσαν πρυμνήν</quote> ( <ref n="Hom. Il. 5.292"> <title>Il.</title> 5. 292</ref>).—It was customary to cut out the tongues of animals slain for sacrifice, and to offer them separately ( <ref n="Hom. Od. 3.332"> <title>Od.</title> 3. 332</ref>: <ref n="Aristoph. Peace 1060">Ar. <title> Pax</title> 1060</ref>). But I doubt whether there is any reference here to the sacrificial custom; the act of Ajax rather expresses merely fierce hatred of a slanderer. </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with theocritus ii. 36. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἄκρας_νυκτός_285">, as the context shows, means here, ‘at dead of night.’ The only other instance of <quote xml:lang="grc">ἄκρος</quote> so used (natural though the use is) seems to be <cit> <bibl n="Theoc. 2">Theocr. II. 36</bibl> <quote xml:lang="grc"> <l>τυρὸς δ’ οὐ λείπει μ’ οὔτ’ ἐν θέρει οὔτ’ ἐν ὀπώρῃ </l> <l>οὐ χειμῶνος ἄκρω</l> </quote> </cit> (‘depth of winter’). Elsewhere <quote xml:lang="grc">ἄκρα νύξ</quote> means either (1) the beginning of night, nightfall, as in Aratus 775 <quote xml:lang="grc">ἄκρῃ νυκτί</quote>: or (2) the verge between night and dawn, as <foreign xml:lang="lat">ib.</foreign> 308 <quote xml:lang="grc">ἀκρόθι νυκτός</quote>. In Theophrastus <title>De Sign. Pluv.</title> 1. § 2 (p. 389 ed. Wimmer) the <quote xml:lang="grc">ἀκρόνυχοι ἀνατολαί</quote> of stars are their risings <quote xml:lang="grc">ὅταν ἅμα δυομένῳ ἀνατέλλῃ</quote> (<quote xml:lang="grc">τὰ ἄστρα</quote>), <foreign xml:lang="lat">i.e.</foreign> soon after sunset, at nightfall. The sense of <quote xml:lang="grc">ἀκρέσπερος</quote> varies like that of <quote xml:lang="grc">ἄκρα νύξ</quote>. In Hippocr. <title>Epidem.</title> 7. 653 <quote xml:lang="grc">ἀκρέσπερος φρίκη</quote> is a chill at the <emph> approach</emph> of evening (as Galen <title>Exeg.</title> p. 418 explains); while in <ref n="Nic. Ther. 25">Nicander <title>Ther.</title> 25</ref> <quote xml:lang="grc">ἀκρέσπερος</quote> is explained by the schol. as=‘at the <emph>close</emph> of evening,’ ‘at nightfall.’ The latter is the sense of <quote xml:lang="grc">ἄκρᾳ σὺν ἑσπέρᾳ</quote> in Pindar <title>P.</title> 11. 10. [In <title>H. A.</title> 9. 34, p. 619 <emph> b</emph> 21, the words <quote xml:lang="grc">ἄχρις ἑσπερίου</quote> have been conjecturally changed to <quote xml:lang="grc">τὴν ἀρχέσπερον</quote>, from Athen. p. 353 B; or to <quote xml:lang="grc">τὴν ἀκρέσπερον</quote>: the sense required is ‘at nightfall.’] </gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:wrong format for citation for ref: theocritus 27.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="μήθ_ἐμός_572">. Only two parallels for the place of <quote xml:lang="grc">ἐμός</quote> are brought from classical Greek literature. (1) <ref n="Eur. Hipp. 683">Eur. <title> Hipp.</title> 683</ref> <quote xml:lang="grc">Ζεύς σ’ ὁ γεννήτωρ ἐμός</quote>: where G. Wolff would omit <quote xml:lang="grc">ὁ</quote>. (2) <cit> <bibl n="Theoc. 27">Theocr. 27. 58</bibl> <quote xml:lang="grc">τὠμπέχονον ποίησας ἐμὸν ῥάκος</quote> </cit>: where Schaefer's remedy, <quote xml:lang="grc">ἐμοὶ</quote>, is quite admissible; Hermann wrote <quote xml:lang="grc">ἀμπεχόναν..ἐμάν</quote>. The nearest analogy to such a license as <quote xml:lang="grc">ὁ λυμεὼν ἐμός</quote> is afforded by such instances as <quote xml:lang="grc">τὸν ἐμὸν πατέρ’ ἄθλιον</quote> ( <ref n="Eur. El. 133">Eur. <title>El.</title> 133</ref> n.), where <quote xml:lang="grc">ἄθλιον</quote> is a mere epithet, but ought, by position, to be a predicate. Remembering the originally pronominal sense of the art., we may hesitate to affirm that an Attic poet could not have ventured to write <quote xml:lang="grc">ὁ λυμεὼν ἐμός</quote>, meaning, ‘that destroyer of mine.’</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 25.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="πολυρράφου_575"> (‘much, or well, stitched’) is a general epithet for elaborate leatherwork, and is again illustrated by the vase-painting cited above, where ornamental tassels hang from the pins which divide the loops of the <quote xml:lang="grc">πόρπαξ</quote>. In <cit> <bibl n="Theoc. 25">Theocr. 25. 265,</bibl> <quote xml:lang="grc">πολύρραπτόν τε φαρέτρην</quote> </cit>, the epithet probably refers to braiding; quivers were often made of hide or leather.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 15.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="τοῖς_λέγε_591">: cp. <cit> <bibl n="Theoc. 15">Theocr. 15. 90</bibl> <quote xml:lang="grc">πεισομένοις ἐπίτασσε</quote> </cit>. Euripides has what seems an echo of this verse in the <title>Hercules Furens</title> (a play referable to 421— 416 B.C., and so later than the <title> Ajax</title>), 1184 <quote xml:lang="grc">ΘΗ. εὔφημα φώνει. ΑΜΦ. βουλομένοισιν ἐπαγγέλλει</quote>.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 17.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἁλίπλαγκτε_693">, though separated from <quote xml:lang="grc">φάνηθ’</quote>, is perhaps best taken with it, since, as merely a general epithet of the god, it would here be less fitting; but then there must be no comma after it. Cp. <ref n="Soph. Phil. 760"> <title>Ph.</title> 760</ref> <quote xml:lang="grc">δύστηνε..φανείς</quote> : <foreign xml:lang="lat">ib.</foreign> 828 <quote xml:lang="grc">εὐαὲς ἡμῖν ἔλθοις</quote> (n.): <cit> <bibl n="Theoc. 17">Theocr. 17. 66</bibl> <quote xml:lang="grc">ὄλβιε κῶρε γένοιο</quote> </cit>. Nonnus 43. 214 describes Pan as <quote xml:lang="grc">ἀβάτοισιν ἐν ὕδασι κοῦφος ὁδίτης</quote>.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Formatting issues with ref: shakespeare henry_vi._pt._ii. 3.
+							2.233.
+
+XML context, if provided, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ξὺν_δικαίῳ_1125">, with right on my side: <ref n="Soph. Phil. 1251"> <title>Ph.</title> 1251</ref> <quote xml:lang="grc">ξὺν τῷ δικαίῳ τὸν σὸν οὐ ταρβῶ φόβον</quote>. <cit> <bibl n="Shak. 2H6 3.2">Shakesp. <title>Henry VI.</title> pt. II. 3. 2. 233</bibl> <quote xml:lang="eng">Thrice is he armed that hath his quarrel just.</quote> </cit> </gloss>
+
+Filename, if provided, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for aeschines or. 2.179
+WARNING:root:wrong format for citation for ref: theocritus 15.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἰδεῖν_1165">, ‘look for’: <ref n="Hom. Od. 8.443"> <title>Od.</title> 8. 443</ref> <quote xml:lang="grc">αὐτὸς νῦν ἴδε πῶμα</quote>: <cit> <bibl n="Theoc. 15">Theocr. 15. 2</bibl> <quote xml:lang="grc">ὅρη δίφρον, Εὐνόα, αὐτῇ</quote> </cit> . </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 2.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ὅπωσπερ_πλόκον_1179">. The primary meaning of this act was self-dedication (1173 n.), but Teucer here gives it a further significance, suggested by the circumstances of the moment; exactly as in <ref n="Hom. Il. 3.300"> <title>Il.</title> 3. 300</ref> the <quote xml:lang="grc">σπονδαί</quote> at the truce are turned into a symbol of death for those who break the truce,—<quote xml:lang="grc">ὧδέ σφ’ ἐγκέφαλος χαμάδις ῥέοι ὡς ὅδε οἶνος</quote>. Cp. <cit> <bibl n="Liv. 1. 24">Liv. 1. 24</bibl> <quote xml:lang="lat">si prior defexit...tu illo die, Iuppiter, populum Romanum sic ferito ut ego hunc porcum hic hodie feriam.</quote> </cit> <cit> <bibl n="Theoc. 2">Theocr. 2. 28</bibl> <quote xml:lang="grc"> <l>ὡς τοῦτον τὸν καρὸν ἐγὼ σὺν δαίμονι τάκω </l> <l>ὣς τάκοιθ’ ὑπ’ ἔρωτος ὁ Μύνδιος αὐτίκα Δέλφις</l> </quote> </cit> . </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for antiphon or. 6.13
+WARNING:root:Work not recognized for antiphon or. 5.30
+WARNING:root:Author not recognized for fr. 531
+
+The xml context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ὅ_πράξει_1418">, how he (himself) will fare: <cit> <bibl>fr. 531</bibl> <quote xml:lang="grc"> <lg type="anapests"> <l>τοῦτο κατειδότας ὡς οὐκ ἔστιν</l> <l>πλὴν Διὸς οὐδεὶς τῶν μελλόντων</l> <l>ταμίας ὅ τι χρὴ τετελέσθαι</l> </lg> </quote> </cit> (verses which probably closed the poet's <title>Tereus</title>). </gloss>.
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for plautus bacch. 4.9.22
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with callimachus hymn._dian. 193. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="πεδία_30"> is the acc. describing the ground traversed (as we can say, ‘to walk the earth’): <ref n="Soph. Aj. 845">cp. 845</ref>: <ref n="Aesch. PB 708">Aesch. <title>P. V.</title> 708</ref> <quote xml:lang="grc">στεῖχ’ ἀνηρότους γύας</quote>: <title>Helen.</title> 598 <quote xml:lang="grc">πᾶσαν πλανηθεὶς τήνδε βάρβαρον χθόνα</quote>: <cit> <bibl n="Call. Dian. 103">Callim. <title>Hymn. Dian.</title> 193</bibl> <quote xml:lang="grc">ἐφοίτα | παίπαλά τε κρημνούς τε</quote> </cit> .</gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:Problem where n attribute is
+app. bc 4.4.19
+and bibl element is
+appian bell. civ. 4. 19
+
+WARNING:root:Work not recognized for aeschines or. 1.59
+WARNING:root:Work not recognized for plautus bacch. 4.7.24
+WARNING:root:Work not recognized for aeschines or. 3.184
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with callimachus hymn._cer. 68. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="αἴθονος_221">, ‘fiery’; <ref n="Soph. Aj. 1088">cp. 1088</ref>: <ref n="Aesch. Seven 448">Aesch. <title>Theb.</title> 448</ref> <quote xml:lang="grc">αἴθων..λῆμα</quote>: in v. 147 the word is applied to a bright sword. This inflexion (instead of <quote xml:lang="grc">αἴθωνος</quote>) occurs elsewhere only in <ref n="Hes. WD 361">Hes. <title>Op.</title> 361</ref> <quote xml:lang="grc">αἴθονα λιμόν</quote> (Bergk's correction of the MS. <quote xml:lang="grc">αἴθοπα</quote>), a reading which is made certain by <cit> <bibl n="Aeschin. 3.184">Aeschin. or. 3 § 184</bibl> <quote xml:lang="grc">λιμόν τ’ αἴθωνα κρατερόν τ’ ἐπάγοντες Ἄρηα</quote> </cit>, and <cit> <bibl n="Call. Cer. 68">Callim. <title>Hymn. Cer.</title> 68</bibl> <quote xml:lang="grc">ἔμβαλε λιμόν, | αἴθωνα, κρατερόν</quote> </cit>: where the fig. sense of the epithet is ‘fierce.’</gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:wrong format for citation for ref: theocritus 9.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="κεφαλὴν_ἄκραν_238">. He first shears off the head; then, still holding it, while the carcass drops to the ground, cuts off the end of the tongue; and next hurls both head and tongue from him. <quote xml:lang="grc">ἄκρα γλῶσσα</quote> can mean the extremity, the tip, of the tongue, as in <cit> <bibl n="Theoc. 9">Theocr. 9. 30</bibl> <quote xml:lang="grc">ἐπὶ γλώσσας ἄκρας</quote> </cit>: so in <ref n="Soph. Phil. 748"> <title>Ph.</title> 748</ref> <quote xml:lang="grc">ἄκρον πόδα</quote> is the heel. It could not mean, ‘the tongue from the roots,’ <quote xml:lang="grc">γλῶσσαν πρυμνήν</quote> ( <ref n="Hom. Il. 5.292"> <title>Il.</title> 5. 292</ref>).—It was customary to cut out the tongues of animals slain for sacrifice, and to offer them separately ( <ref n="Hom. Od. 3.332"> <title>Od.</title> 3. 332</ref>: <ref n="Aristoph. Peace 1060">Ar. <title> Pax</title> 1060</ref>). But I doubt whether there is any reference here to the sacrificial custom; the act of Ajax rather expresses merely fierce hatred of a slanderer. </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with theocritus ii. 36. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἄκρας_νυκτός_285">, as the context shows, means here, ‘at dead of night.’ The only other instance of <quote xml:lang="grc">ἄκρος</quote> so used (natural though the use is) seems to be <cit> <bibl n="Theoc. 2">Theocr. II. 36</bibl> <quote xml:lang="grc"> <l>τυρὸς δ’ οὐ λείπει μ’ οὔτ’ ἐν θέρει οὔτ’ ἐν ὀπώρῃ </l> <l>οὐ χειμῶνος ἄκρω</l> </quote> </cit> (‘depth of winter’). Elsewhere <quote xml:lang="grc">ἄκρα νύξ</quote> means either (1) the beginning of night, nightfall, as in Aratus 775 <quote xml:lang="grc">ἄκρῃ νυκτί</quote>: or (2) the verge between night and dawn, as <foreign xml:lang="lat">ib.</foreign> 308 <quote xml:lang="grc">ἀκρόθι νυκτός</quote>. In Theophrastus <title>De Sign. Pluv.</title> 1. § 2 (p. 389 ed. Wimmer) the <quote xml:lang="grc">ἀκρόνυχοι ἀνατολαί</quote> of stars are their risings <quote xml:lang="grc">ὅταν ἅμα δυομένῳ ἀνατέλλῃ</quote> (<quote xml:lang="grc">τὰ ἄστρα</quote>), <foreign xml:lang="lat">i.e.</foreign> soon after sunset, at nightfall. The sense of <quote xml:lang="grc">ἀκρέσπερος</quote> varies like that of <quote xml:lang="grc">ἄκρα νύξ</quote>. In Hippocr. <title>Epidem.</title> 7. 653 <quote xml:lang="grc">ἀκρέσπερος φρίκη</quote> is a chill at the <emph> approach</emph> of evening (as Galen <title>Exeg.</title> p. 418 explains); while in <ref n="Nic. Ther. 25">Nicander <title>Ther.</title> 25</ref> <quote xml:lang="grc">ἀκρέσπερος</quote> is explained by the schol. as=‘at the <emph>close</emph> of evening,’ ‘at nightfall.’ The latter is the sense of <quote xml:lang="grc">ἄκρᾳ σὺν ἑσπέρᾳ</quote> in Pindar <title>P.</title> 11. 10. [In <title>H. A.</title> 9. 34, p. 619 <emph> b</emph> 21, the words <quote xml:lang="grc">ἄχρις ἑσπερίου</quote> have been conjecturally changed to <quote xml:lang="grc">τὴν ἀρχέσπερον</quote>, from Athen. p. 353 B; or to <quote xml:lang="grc">τὴν ἀκρέσπερον</quote>: the sense required is ‘at nightfall.’] </gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:wrong format for citation for ref: theocritus 27.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="μήθ_ἐμός_572">. Only two parallels for the place of <quote xml:lang="grc">ἐμός</quote> are brought from classical Greek literature. (1) <ref n="Eur. Hipp. 683">Eur. <title> Hipp.</title> 683</ref> <quote xml:lang="grc">Ζεύς σ’ ὁ γεννήτωρ ἐμός</quote>: where G. Wolff would omit <quote xml:lang="grc">ὁ</quote>. (2) <cit> <bibl n="Theoc. 27">Theocr. 27. 58</bibl> <quote xml:lang="grc">τὠμπέχονον ποίησας ἐμὸν ῥάκος</quote> </cit>: where Schaefer's remedy, <quote xml:lang="grc">ἐμοὶ</quote>, is quite admissible; Hermann wrote <quote xml:lang="grc">ἀμπεχόναν..ἐμάν</quote>. The nearest analogy to such a license as <quote xml:lang="grc">ὁ λυμεὼν ἐμός</quote> is afforded by such instances as <quote xml:lang="grc">τὸν ἐμὸν πατέρ’ ἄθλιον</quote> ( <ref n="Eur. El. 133">Eur. <title>El.</title> 133</ref> n.), where <quote xml:lang="grc">ἄθλιον</quote> is a mere epithet, but ought, by position, to be a predicate. Remembering the originally pronominal sense of the art., we may hesitate to affirm that an Attic poet could not have ventured to write <quote xml:lang="grc">ὁ λυμεὼν ἐμός</quote>, meaning, ‘that destroyer of mine.’</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 25.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="πολυρράφου_575"> (‘much, or well, stitched’) is a general epithet for elaborate leatherwork, and is again illustrated by the vase-painting cited above, where ornamental tassels hang from the pins which divide the loops of the <quote xml:lang="grc">πόρπαξ</quote>. In <cit> <bibl n="Theoc. 25">Theocr. 25. 265,</bibl> <quote xml:lang="grc">πολύρραπτόν τε φαρέτρην</quote> </cit>, the epithet probably refers to braiding; quivers were often made of hide or leather.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 15.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="τοῖς_λέγε_591">: cp. <cit> <bibl n="Theoc. 15">Theocr. 15. 90</bibl> <quote xml:lang="grc">πεισομένοις ἐπίτασσε</quote> </cit>. Euripides has what seems an echo of this verse in the <title>Hercules Furens</title> (a play referable to 421— 416 B.C., and so later than the <title> Ajax</title>), 1184 <quote xml:lang="grc">ΘΗ. εὔφημα φώνει. ΑΜΦ. βουλομένοισιν ἐπαγγέλλει</quote>.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 17.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἁλίπλαγκτε_693">, though separated from <quote xml:lang="grc">φάνηθ’</quote>, is perhaps best taken with it, since, as merely a general epithet of the god, it would here be less fitting; but then there must be no comma after it. Cp. <ref n="Soph. Phil. 760"> <title>Ph.</title> 760</ref> <quote xml:lang="grc">δύστηνε..φανείς</quote> : <foreign xml:lang="lat">ib.</foreign> 828 <quote xml:lang="grc">εὐαὲς ἡμῖν ἔλθοις</quote> (n.): <cit> <bibl n="Theoc. 17">Theocr. 17. 66</bibl> <quote xml:lang="grc">ὄλβιε κῶρε γένοιο</quote> </cit>. Nonnus 43. 214 describes Pan as <quote xml:lang="grc">ἀβάτοισιν ἐν ὕδασι κοῦφος ὁδίτης</quote>.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Formatting issues with ref: shakespeare henry_vi._pt._ii. 3.
+							2.233.
+
+XML context, if provided, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ξὺν_δικαίῳ_1125">, with right on my side: <ref n="Soph. Phil. 1251"> <title>Ph.</title> 1251</ref> <quote xml:lang="grc">ξὺν τῷ δικαίῳ τὸν σὸν οὐ ταρβῶ φόβον</quote>. <cit> <bibl n="Shak. 2H6 3.2">Shakesp. <title>Henry VI.</title> pt. II. 3. 2. 233</bibl> <quote xml:lang="eng">Thrice is he armed that hath his quarrel just.</quote> </cit> </gloss>
+
+Filename, if provided, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for aeschines or. 2.179
+WARNING:root:wrong format for citation for ref: theocritus 15.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἰδεῖν_1165">, ‘look for’: <ref n="Hom. Od. 8.443"> <title>Od.</title> 8. 443</ref> <quote xml:lang="grc">αὐτὸς νῦν ἴδε πῶμα</quote>: <cit> <bibl n="Theoc. 15">Theocr. 15. 2</bibl> <quote xml:lang="grc">ὅρη δίφρον, Εὐνόα, αὐτῇ</quote> </cit> . </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 2.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ὅπωσπερ_πλόκον_1179">. The primary meaning of this act was self-dedication (1173 n.), but Teucer here gives it a further significance, suggested by the circumstances of the moment; exactly as in <ref n="Hom. Il. 3.300"> <title>Il.</title> 3. 300</ref> the <quote xml:lang="grc">σπονδαί</quote> at the truce are turned into a symbol of death for those who break the truce,—<quote xml:lang="grc">ὧδέ σφ’ ἐγκέφαλος χαμάδις ῥέοι ὡς ὅδε οἶνος</quote>. Cp. <cit> <bibl n="Liv. 1. 24">Liv. 1. 24</bibl> <quote xml:lang="lat">si prior defexit...tu illo die, Iuppiter, populum Romanum sic ferito ut ego hunc porcum hic hodie feriam.</quote> </cit> <cit> <bibl n="Theoc. 2">Theocr. 2. 28</bibl> <quote xml:lang="grc"> <l>ὡς τοῦτον τὸν καρὸν ἐγὼ σὺν δαίμονι τάκω </l> <l>ὣς τάκοιθ’ ὑπ’ ἔρωτος ὁ Μύνδιος αὐτίκα Δέλφις</l> </quote> </cit> . </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for antiphon or. 6.13
+WARNING:root:Work not recognized for antiphon or. 5.30
+WARNING:root:Author not recognized for fr. 531
+
+The xml context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ὅ_πράξει_1418">, how he (himself) will fare: <cit> <bibl>fr. 531</bibl> <quote xml:lang="grc"> <lg type="anapests"> <l>τοῦτο κατειδότας ὡς οὐκ ἔστιν</l> <l>πλὴν Διὸς οὐδεὶς τῶν μελλόντων</l> <l>ταμίας ὅ τι χρὴ τετελέσθαι</l> </lg> </quote> </cit> (verses which probably closed the poet's <title>Tereus</title>). </gloss>.
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for plautus bacch. 4.9.22
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with callimachus hymn._dian. 193. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="πεδία_30"> is the acc. describing the ground traversed (as we can say, ‘to walk the earth’): <ref n="Soph. Aj. 845">cp. 845</ref>: <ref n="Aesch. PB 708">Aesch. <title>P. V.</title> 708</ref> <quote xml:lang="grc">στεῖχ’ ἀνηρότους γύας</quote>: <title>Helen.</title> 598 <quote xml:lang="grc">πᾶσαν πλανηθεὶς τήνδε βάρβαρον χθόνα</quote>: <cit> <bibl n="Call. Dian. 103">Callim. <title>Hymn. Dian.</title> 193</bibl> <quote xml:lang="grc">ἐφοίτα | παίπαλά τε κρημνούς τε</quote> </cit> .</gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:Problem where n attribute is
+app. bc 4.4.19
+and bibl element is
+appian bell. civ. 4. 19
+
+WARNING:root:Work not recognized for aeschines or. 1.59
+WARNING:root:Work not recognized for plautus bacch. 4.7.24
+WARNING:root:Work not recognized for aeschines or. 3.184
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with callimachus hymn._cer. 68. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="αἴθονος_221">, ‘fiery’; <ref n="Soph. Aj. 1088">cp. 1088</ref>: <ref n="Aesch. Seven 448">Aesch. <title>Theb.</title> 448</ref> <quote xml:lang="grc">αἴθων..λῆμα</quote>: in v. 147 the word is applied to a bright sword. This inflexion (instead of <quote xml:lang="grc">αἴθωνος</quote>) occurs elsewhere only in <ref n="Hes. WD 361">Hes. <title>Op.</title> 361</ref> <quote xml:lang="grc">αἴθονα λιμόν</quote> (Bergk's correction of the MS. <quote xml:lang="grc">αἴθοπα</quote>), a reading which is made certain by <cit> <bibl n="Aeschin. 3.184">Aeschin. or. 3 § 184</bibl> <quote xml:lang="grc">λιμόν τ’ αἴθωνα κρατερόν τ’ ἐπάγοντες Ἄρηα</quote> </cit>, and <cit> <bibl n="Call. Cer. 68">Callim. <title>Hymn. Cer.</title> 68</bibl> <quote xml:lang="grc">ἔμβαλε λιμόν, | αἴθωνα, κρατερόν</quote> </cit>: where the fig. sense of the epithet is ‘fierce.’</gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:wrong format for citation for ref: theocritus 9.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="κεφαλὴν_ἄκραν_238">. He first shears off the head; then, still holding it, while the carcass drops to the ground, cuts off the end of the tongue; and next hurls both head and tongue from him. <quote xml:lang="grc">ἄκρα γλῶσσα</quote> can mean the extremity, the tip, of the tongue, as in <cit> <bibl n="Theoc. 9">Theocr. 9. 30</bibl> <quote xml:lang="grc">ἐπὶ γλώσσας ἄκρας</quote> </cit>: so in <ref n="Soph. Phil. 748"> <title>Ph.</title> 748</ref> <quote xml:lang="grc">ἄκρον πόδα</quote> is the heel. It could not mean, ‘the tongue from the roots,’ <quote xml:lang="grc">γλῶσσαν πρυμνήν</quote> ( <ref n="Hom. Il. 5.292"> <title>Il.</title> 5. 292</ref>).—It was customary to cut out the tongues of animals slain for sacrifice, and to offer them separately ( <ref n="Hom. Od. 3.332"> <title>Od.</title> 3. 332</ref>: <ref n="Aristoph. Peace 1060">Ar. <title> Pax</title> 1060</ref>). But I doubt whether there is any reference here to the sacrificial custom; the act of Ajax rather expresses merely fierce hatred of a slanderer. </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:
+            Warning: possible issues with the work name or the passage citation with theocritus ii. 36. 
+            Content, if provided, is <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἄκρας_νυκτός_285">, as the context shows, means here, ‘at dead of night.’ The only other instance of <quote xml:lang="grc">ἄκρος</quote> so used (natural though the use is) seems to be <cit> <bibl n="Theoc. 2">Theocr. II. 36</bibl> <quote xml:lang="grc"> <l>τυρὸς δ’ οὐ λείπει μ’ οὔτ’ ἐν θέρει οὔτ’ ἐν ὀπώρῃ </l> <l>οὐ χειμῶνος ἄκρω</l> </quote> </cit> (‘depth of winter’). Elsewhere <quote xml:lang="grc">ἄκρα νύξ</quote> means either (1) the beginning of night, nightfall, as in Aratus 775 <quote xml:lang="grc">ἄκρῃ νυκτί</quote>: or (2) the verge between night and dawn, as <foreign xml:lang="lat">ib.</foreign> 308 <quote xml:lang="grc">ἀκρόθι νυκτός</quote>. In Theophrastus <title>De Sign. Pluv.</title> 1. § 2 (p. 389 ed. Wimmer) the <quote xml:lang="grc">ἀκρόνυχοι ἀνατολαί</quote> of stars are their risings <quote xml:lang="grc">ὅταν ἅμα δυομένῳ ἀνατέλλῃ</quote> (<quote xml:lang="grc">τὰ ἄστρα</quote>), <foreign xml:lang="lat">i.e.</foreign> soon after sunset, at nightfall. The sense of <quote xml:lang="grc">ἀκρέσπερος</quote> varies like that of <quote xml:lang="grc">ἄκρα νύξ</quote>. In Hippocr. <title>Epidem.</title> 7. 653 <quote xml:lang="grc">ἀκρέσπερος φρίκη</quote> is a chill at the <emph> approach</emph> of evening (as Galen <title>Exeg.</title> p. 418 explains); while in <ref n="Nic. Ther. 25">Nicander <title>Ther.</title> 25</ref> <quote xml:lang="grc">ἀκρέσπερος</quote> is explained by the schol. as=‘at the <emph>close</emph> of evening,’ ‘at nightfall.’ The latter is the sense of <quote xml:lang="grc">ἄκρᾳ σὺν ἑσπέρᾳ</quote> in Pindar <title>P.</title> 11. 10. [In <title>H. A.</title> 9. 34, p. 619 <emph> b</emph> 21, the words <quote xml:lang="grc">ἄχρις ἑσπερίου</quote> have been conjecturally changed to <quote xml:lang="grc">τὴν ἀρχέσπερον</quote>, from Athen. p. 353 B; or to <quote xml:lang="grc">τὴν ἀκρέσπερον</quote>: the sense required is ‘at nightfall.’] </gloss>, filename ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml.
+            
+WARNING:root:wrong format for citation for ref: theocritus 27.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="μήθ_ἐμός_572">. Only two parallels for the place of <quote xml:lang="grc">ἐμός</quote> are brought from classical Greek literature. (1) <ref n="Eur. Hipp. 683">Eur. <title> Hipp.</title> 683</ref> <quote xml:lang="grc">Ζεύς σ’ ὁ γεννήτωρ ἐμός</quote>: where G. Wolff would omit <quote xml:lang="grc">ὁ</quote>. (2) <cit> <bibl n="Theoc. 27">Theocr. 27. 58</bibl> <quote xml:lang="grc">τὠμπέχονον ποίησας ἐμὸν ῥάκος</quote> </cit>: where Schaefer's remedy, <quote xml:lang="grc">ἐμοὶ</quote>, is quite admissible; Hermann wrote <quote xml:lang="grc">ἀμπεχόναν..ἐμάν</quote>. The nearest analogy to such a license as <quote xml:lang="grc">ὁ λυμεὼν ἐμός</quote> is afforded by such instances as <quote xml:lang="grc">τὸν ἐμὸν πατέρ’ ἄθλιον</quote> ( <ref n="Eur. El. 133">Eur. <title>El.</title> 133</ref> n.), where <quote xml:lang="grc">ἄθλιον</quote> is a mere epithet, but ought, by position, to be a predicate. Remembering the originally pronominal sense of the art., we may hesitate to affirm that an Attic poet could not have ventured to write <quote xml:lang="grc">ὁ λυμεὼν ἐμός</quote>, meaning, ‘that destroyer of mine.’</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 25.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="πολυρράφου_575"> (‘much, or well, stitched’) is a general epithet for elaborate leatherwork, and is again illustrated by the vase-painting cited above, where ornamental tassels hang from the pins which divide the loops of the <quote xml:lang="grc">πόρπαξ</quote>. In <cit> <bibl n="Theoc. 25">Theocr. 25. 265,</bibl> <quote xml:lang="grc">πολύρραπτόν τε φαρέτρην</quote> </cit>, the epithet probably refers to braiding; quivers were often made of hide or leather.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 15.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="τοῖς_λέγε_591">: cp. <cit> <bibl n="Theoc. 15">Theocr. 15. 90</bibl> <quote xml:lang="grc">πεισομένοις ἐπίτασσε</quote> </cit>. Euripides has what seems an echo of this verse in the <title>Hercules Furens</title> (a play referable to 421— 416 B.C., and so later than the <title> Ajax</title>), 1184 <quote xml:lang="grc">ΘΗ. εὔφημα φώνει. ΑΜΦ. βουλομένοισιν ἐπαγγέλλει</quote>.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 17.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἁλίπλαγκτε_693">, though separated from <quote xml:lang="grc">φάνηθ’</quote>, is perhaps best taken with it, since, as merely a general epithet of the god, it would here be less fitting; but then there must be no comma after it. Cp. <ref n="Soph. Phil. 760"> <title>Ph.</title> 760</ref> <quote xml:lang="grc">δύστηνε..φανείς</quote> : <foreign xml:lang="lat">ib.</foreign> 828 <quote xml:lang="grc">εὐαὲς ἡμῖν ἔλθοις</quote> (n.): <cit> <bibl n="Theoc. 17">Theocr. 17. 66</bibl> <quote xml:lang="grc">ὄλβιε κῶρε γένοιο</quote> </cit>. Nonnus 43. 214 describes Pan as <quote xml:lang="grc">ἀβάτοισιν ἐν ὕδασι κοῦφος ὁδίτης</quote>.</gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Formatting issues with ref: shakespeare henry_vi._pt._ii. 3.
+							2.233.
+
+XML context, if provided, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ξὺν_δικαίῳ_1125">, with right on my side: <ref n="Soph. Phil. 1251"> <title>Ph.</title> 1251</ref> <quote xml:lang="grc">ξὺν τῷ δικαίῳ τὸν σὸν οὐ ταρβῶ φόβον</quote>. <cit> <bibl n="Shak. 2H6 3.2">Shakesp. <title>Henry VI.</title> pt. II. 3. 2. 233</bibl> <quote xml:lang="eng">Thrice is he armed that hath his quarrel just.</quote> </cit> </gloss>
+
+Filename, if provided, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for aeschines or. 2.179
+WARNING:root:wrong format for citation for ref: theocritus 15.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ἰδεῖν_1165">, ‘look for’: <ref n="Hom. Od. 8.443"> <title>Od.</title> 8. 443</ref> <quote xml:lang="grc">αὐτὸς νῦν ἴδε πῶμα</quote>: <cit> <bibl n="Theoc. 15">Theocr. 15. 2</bibl> <quote xml:lang="grc">ὅρη δίφρον, Εὐνόα, αὐτῇ</quote> </cit> . </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:wrong format for citation for ref: theocritus 2.
+
+XML context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ὅπωσπερ_πλόκον_1179">. The primary meaning of this act was self-dedication (1173 n.), but Teucer here gives it a further significance, suggested by the circumstances of the moment; exactly as in <ref n="Hom. Il. 3.300"> <title>Il.</title> 3. 300</ref> the <quote xml:lang="grc">σπονδαί</quote> at the truce are turned into a symbol of death for those who break the truce,—<quote xml:lang="grc">ὧδέ σφ’ ἐγκέφαλος χαμάδις ῥέοι ὡς ὅδε οἶνος</quote>. Cp. <cit> <bibl n="Liv. 1. 24">Liv. 1. 24</bibl> <quote xml:lang="lat">si prior defexit...tu illo die, Iuppiter, populum Romanum sic ferito ut ego hunc porcum hic hodie feriam.</quote> </cit> <cit> <bibl n="Theoc. 2">Theocr. 2. 28</bibl> <quote xml:lang="grc"> <l>ὡς τοῦτον τὸν καρὸν ἐγὼ σὺν δαίμονι τάκω </l> <l>ὣς τάκοιθ’ ὑπ’ ἔρωτος ὁ Μύνδιος αὐτίκα Δέλφις</l> </quote> </cit> . </gloss>
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml
+WARNING:root:Work not recognized for antiphon or. 6.13
+WARNING:root:Work not recognized for antiphon or. 5.30
+WARNING:root:Author not recognized for fr. 531
+
+The xml context, if available, is: <gloss xmlns="http://www.tei-c.org/ns/1.0" xml:id="ὅ_πράξει_1418">, how he (himself) will fare: <cit> <bibl>fr. 531</bibl> <quote xml:lang="grc"> <lg type="anapests"> <l>τοῦτο κατειδότας ὡς οὐκ ἔστιν</l> <l>πλὴν Διὸς οὐδεὶς τῶν μελλόντων</l> <l>ταμίας ὅ τι χρὴ τετελέσθαι</l> </lg> </quote> </cit> (verses which probably closed the poet's <title>Tereus</title>). </gloss>.
+
+Filename, if available, is: ../../PerseusDL/canonical_pdlrefwk/data/viaf2603144/viaf004/viaf2603144.viaf004.perseus-eng1.xml

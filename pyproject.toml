@@ -1,0 +1,14 @@
+[project]
+name = "atlas-data-prep"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jsonlines>=4.0.0",
+    "lxml",
+    "lxml-stubs>=0.5.1",
+]
+
+[dependency-groups]
+dev = []

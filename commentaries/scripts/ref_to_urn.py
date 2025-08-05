@@ -344,14 +344,16 @@ def _detect_urn(ref) -> Optional[str]:
     return
 
 
-def _res_ordered_works(work_collection: tuple[str, int, int], ref: str, auth: str) -> Optional[str]:
-    # some keys in the dictionary of work urns amap to a function that returns the tuple 
+def _res_ordered_works(
+    work_collection: tuple[str, int, int], ref: str, auth: str
+) -> Optional[str]:
+    # some keys in the dictionary of work urns amap to a function that returns the tuple
     # that can be passed as work_collection
     urn_stem, start, end = work_collection
     if len(auth) >= len(ref):
         logging.warning(f"Problem processing collection of works for {ref}.")
         return
-    work_number = ref[len(auth):].split()[1]
+    work_number = ref[len(auth) :].split()[1]
     work_number = work_number.split(".")[0]
     if not work_number.isnumeric():
         logging.warning(f"Problem processing collection of works for {ref}.")
@@ -364,6 +366,7 @@ def _res_ordered_works(work_collection: tuple[str, int, int], ref: str, auth: st
     urn_number = str(urn_number).zfill(3)
     urn = f"{urn_stem}{urn_number}"
     return urn
+
 
 def get_ref(
     from_n: Optional[str] = None, from_bibl: Optional[str] = None
@@ -606,8 +609,8 @@ def get_urn(
         if len(split) <= 1:
             break
 
-        for i in range(1, len(split)-pos_after_auth):
-            term = "_".join(split[pos_after_auth:pos_after_auth+i])
+        for i in range(1, len(split) - pos_after_auth):
+            term = "_".join(split[pos_after_auth : pos_after_auth + i])
             if WORK_URNS[auth].get(term):
                 as_one_book_auth = False
                 break
@@ -637,7 +640,9 @@ def get_urn(
         work_words = 0
         while not isinstance(auth, str):
             work_words += 1
-            work_name = " ".join(ref.split()[pos_after_auth: pos_after_auth+work_words])
+            work_name = " ".join(
+                ref.split()[pos_after_auth : pos_after_auth + work_words]
+            )
             auth = auth(work_name)
             if work_words == 4:
                 break
@@ -700,11 +705,13 @@ def get_urn(
 
     # greatest possible ref length: author bigram + work + loc
     if len(ref.split()) not in (2, 3, 4):
-        logging.warning(f"""
+        logging.warning(
+            f"""
             wrong format for citation ref: {ref}\n
             citation content, if available, is: {content}\n
             filename, if available, is: {filename}
-        """)
+        """
+        )
         return  # failure case
 
     if len(ref.split()) == pos_after_auth + 1:
@@ -746,7 +753,7 @@ def get_urn(
             if term.isnumeric():
                 if numeric_count == 0:
                     numeric_count += 1
-                    continue # skip numeric term that specifies which work in collection
+                    continue  # skip numeric term that specifies which work in collection
                 numerics.append(term)
         # deal with dashes in loc
         if re.search(r"\d+[–-—]{1}\d+", term):
@@ -798,10 +805,12 @@ def get_urn(
         urn = f"{auth_urn}.{work_urn}.perseus-eng2:{loc}"
     else:
         urn = f"{auth_urn}.{work_urn}:{loc}"
-        logging.warning(f"""
+        logging.warning(
+            f"""
         "warning: possible incorrectly formatted citation urn. 
         {urn}
-        """)
+        """
+        )
     return urn
 
 

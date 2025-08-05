@@ -111,9 +111,9 @@ def extract_citations(
         cit_urn = f"{urn_prefix}:citations-{idx}.{counter['count']}"
         counter["count"] += 1
         quote = re.search(r"<quote.*?>(.+)</quote>", match.group())
-        assert quote, (
-            f"Issue extracting quote from {p_xml}\n\nin citation {match.group()}"
-        )
+        assert (
+            quote
+        ), f"Issue extracting quote from {p_xml}\n\nin citation {match.group()}"
         quote = quote.group(1)
         # TODO: sometimes contents of bibl element is in format "v. #"
         # we can't consistently prefer the n attribute or the bibl element, have to
