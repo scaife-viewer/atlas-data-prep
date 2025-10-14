@@ -1,8 +1,6 @@
 {
-  "label": "The Attic Orators from Antiphon to Isaeos by Sir Richard C. Jebb",
+  "label": "The Attic Orators from Antiphon to Isaeos by Sir R. C. Jebb",
   "urn": "urn:cts:greekLit:viaf2603144.viaf008.perseus-eng1",
   "kind": "Commentary",
-  "entries": [
-    "glossae_001.jsonl"
-  ]
+  "entries": "glossae_001.jsonl"
 }

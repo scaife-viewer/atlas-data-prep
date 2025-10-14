@@ -102,7 +102,9 @@ def convert():
     for commentary_dir in COMMENTARY_DIRS:
         commentary = Commentary(commentary_dir)
 
-        destination = Path(f"test-data/commentaries/{commentary.urn}")
+        destination = Path(
+            f"test-data/commentaries/{commentary.urn.replace('urn:cts:greekLit:', '')}"
+        )
 
         if not destination.is_dir():
             destination.mkdir(parents=True)
