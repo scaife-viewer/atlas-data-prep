@@ -3,12 +3,12 @@
 import json
 import logging
 import os
+import re
 
 from pathlib import Path
 
 from lxml import etree
 
-from .convert_ot_cit import to_xml
 from .ref_to_urn import get_ref, get_urn
 
 logging.basicConfig(level=logging.INFO)
@@ -27,6 +27,13 @@ NAMESPACES = {
     "xml": "http://www.w3.org/XML/1998/namespace",
 }
 XML_ID_ATTR = "{http://www.w3.org/XML/1998/namespace}id"
+
+def to_xml(el):
+    return re.sub(
+        r"\s+",
+        " ",
+        etree.tostring(el, with_tail=True, encoding="unicode", method="xml"),
+    ).strip()
 
 
 class Commentary:
