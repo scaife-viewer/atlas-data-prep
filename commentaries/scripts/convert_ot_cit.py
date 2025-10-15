@@ -8,7 +8,7 @@ from typing import Optional
 
 from lxml import etree
 
-from ref_to_urn import get_urn, get_ref, mk_cit_data, CITATION_FAIL_OUT, CITATION_OUT
+from .ref_to_urn import get_urn, get_ref, mk_cit_data, CITATION_FAIL_OUT, CITATION_OUT
 
 
 def TEI(tag):

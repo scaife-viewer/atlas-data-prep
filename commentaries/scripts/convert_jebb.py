@@ -1,10 +1,17 @@
 #!/usr/bin/env python
+
 import json
+import logging
 import os
 
 from pathlib import Path
 
 from lxml import etree
+
+from .convert_ot_cit import to_xml
+from .ref_to_urn import get_ref, get_urn
+
+logging.basicConfig(level=logging.INFO)
 
 SRC_DIR = Path(
     os.getenv("JEBB_COMMENTARIES_ROOT", "canonical_pdlrefwk/data/viaf2603144")
@@ -26,70 +33,88 @@ class Commentary:
     def __init__(self, dirname: Path):
         files = [f for f in dirname.iterdir()]
 
-        filename = [f for f in files if str(f).endswith("perseus-eng1.xml")][0]
+        self.filename = [f for f in files if str(f).endswith("perseus-eng1.xml")][0]
         metadata_filename = [f for f in files if str(f).endswith("__cts__.xml")][0]
 
         self.metadata_tree = etree.parse(metadata_filename)
-        self.tree = etree.parse(filename)
-        self.urn = self.tree.find(".//tei:body", namespaces=NAMESPACES).get("n")
-        self.glossae = self.collect_glossae(self.tree, self.urn)
+        self.tree = etree.parse(self.filename)
+
+        body = self.tree.find(".//tei:body", namespaces=NAMESPACES)
+
+        assert body is not None, f"No body tag found for {self.filename}; aborting"
+
+        self.urn: str = str(body.get("n"))
+        self.glossae = self.collect_glossae(self.tree, self.urn, self.filename)
         self.metadata = self.collect_metadata(self.metadata_tree, self.urn)
 
-    def collect_glossae(self, tree: etree._ElementTree, urn: str):
-        glosses = []
 
-        idx = 0
+    def collect_glossae(self, tree: etree._ElementTree, urn: str, filename: Path | str):
+        citation_index = 0
 
         for commline in tree.iterfind(
             ".//tei:div[@subtype='commline']", namespaces=NAMESPACES
         ):
             n = commline.get("n")
 
-            assert n is not None, f"No n for commline {commline}"
-
             for lemma in commline.iterfind(".//tei:s", namespaces=NAMESPACES):
-                ana = lemma.get("ana").replace("#", "")
-                parent = lemma.getparent()
+                ana = lemma.get("ana", "").replace("#", "")
 
-                gloss = parent.iterfind(
-                    f"./tei:gloss[@xml:id='{ana}']", namespaces=NAMESPACES
-                )
+                glossa_xpath = f".//tei:gloss[@xml:id='{ana}']"
+                glossa = commline.find(glossa_xpath, namespaces=NAMESPACES)
 
-                assert gloss, f"No gloss found for {ana}"
+                if glossa is not None:
+                    citation_index += 1
 
-                split_citation = ana.split("_")
+                    citations = []
 
-                citation_fragment = None
+                    for cit in glossa.iterfind(".//tei:cit", namespaces=NAMESPACES):
+                        quote = " ".join(cit.xpath("./tei:quote/text()", namespaces=NAMESPACES))  # type: ignore
+                        bibl = cit.find("./tei:bibl", namespaces=NAMESPACES)
+                        ref = ""
 
-                if len(split_citation) == 4:
-                    [citation_token_1, citation_token_2, _line_n, _line_n_idx] = (
-                        split_citation
-                    )
-                elif len(split_citation) == 3:
-                    [citation_token_1, citation_token_2, _line_n] = split_citation
-                    citation_fragment = "-".join(
-                        [f"{n}@{citation_token_1}", f"{n}@{citation_token_2}"]
-                    )
-                else:
-                    [citation_token_1, _line_n] = split_citation
-                    citation_fragment = f"{n}@{citation_token_1}"
+                        if bibl is not None:
+                            bibl_n = bibl.get("n", "")
+                            bibl_text = etree.tostring(
+                                bibl, encoding="unicode", method="text"
+                            )
+                            ref = get_ref(bibl_n, bibl_text)
 
-                glosses.append(
-                    {
-                        "content": etree.tostring(
-                            parent, with_tail=True, encoding="unicode", method="xml"
-                        ),
-                        "corresp": f"{urn}:{citation_fragment}",
-                        "urn": f"{urn}.jebb:{idx}",
+                        citation = {
+                            "urn": f"{urn}:citations-{citation_index}.{len(citations) + 1}",
+                            "data": {
+                                "quote": quote,
+                                "ref": ref,
+                                "urn": get_urn(
+                                    ref, content=to_xml(glossa), filename=str(self.filename)
+                                ),
+                            },
+                        }
+
+                        citations.append(citation)
+
+                    split_ana = ana.split("_")
+
+                    if len(split_ana) == 2:
+                        corresp = f"{n}@{split_ana[0]}"
+                    else:
+                        corresp = f"{n}@{split_ana[0]}-{n}@{split_ana[1]}"
+
+                    entry = {
+                        "urn": f"{urn}:{citation_index}",
+                        "corresp": corresp,
+                        "content": to_xml(glossa),
+                        "citations": citations,
                     }
-                )
 
-                idx += 1
-
-        return glosses
+                    yield entry
 
     def collect_metadata(self, tree: etree._ElementTree, urn: str):
-        title = tree.find("./ti:title", namespaces=NAMESPACES).text
+        print(etree.tostring(tree))
+        title_el = tree.find(".//{*}title")
+
+        assert title_el is not None, f"No title found for {urn}"
+
+        title = title_el.text
 
         return {
             "label": f"{title} by Sir R. C. Jebb",
@@ -111,7 +136,6 @@ def convert():
 
         with open(destination / "glossae_001.jsonl", "w") as f:
             for gloss in commentary.glossae:
-                print(gloss)
                 print(json.dumps(gloss, ensure_ascii=False), file=f)
 
         with open(destination / "metadata.json", "w") as f:
