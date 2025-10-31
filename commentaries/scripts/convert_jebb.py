@@ -28,6 +28,7 @@ NAMESPACES = {
 }
 XML_ID_ATTR = "{http://www.w3.org/XML/1998/namespace}id"
 
+
 def to_xml(el):
     return re.sub(
         r"\s+",
@@ -51,9 +52,8 @@ class Commentary:
         assert body is not None, f"No body tag found for {self.filename}; aborting"
 
         self.urn: str = str(body.get("n"))
-        self.glossae = self.collect_glossae(self.tree, self.urn, self.filename)
         self.metadata = self.collect_metadata(self.metadata_tree, self.urn)
-
+        self.glossae = self.collect_glossae(self.tree, self.urn, self.filename)
 
     def collect_glossae(self, tree: etree._ElementTree, urn: str, filename: Path | str):
         citation_index = 0
@@ -64,6 +64,7 @@ class Commentary:
             n = commline.get("n")
 
             for lemma in commline.iterfind(".//tei:s", namespaces=NAMESPACES):
+                lemma_text = etree.tostring(lemma, encoding="unicode", method="text").strip()
                 ana = lemma.get("ana", "").replace("#", "")
 
                 glossa_xpath = f".//tei:gloss[@xml:id='{ana}']"
@@ -92,7 +93,9 @@ class Commentary:
                                 "quote": quote,
                                 "ref": ref,
                                 "urn": get_urn(
-                                    ref, content=to_xml(glossa), filename=str(self.filename)
+                                    ref,
+                                    content=to_xml(glossa),
+                                    filename=str(self.filename),
                                 ),
                             },
                         }
@@ -108,18 +111,26 @@ class Commentary:
 
                     entry = {
                         "urn": f"{urn}:{citation_index}",
-                        "corresp": corresp,
+                        "corresp": f"{self.metadata['about']}:{corresp}",
                         "content": to_xml(glossa),
                         "citations": citations,
+                        "lemma": lemma_text,
                     }
 
                     yield entry
 
     def collect_metadata(self, tree: etree._ElementTree, urn: str):
-        print(etree.tostring(tree))
         title_el = tree.find(".//{*}title")
 
         assert title_el is not None, f"No title found for {urn}"
+
+        about_el = tree.find(".//{*}about")
+
+        assert about_el is not None, f"No ti:about tag found for {urn}"
+
+        about = about_el.get("urn")
+
+        assert about is not None, f"No @urn attribute found on ti:about tag for {urn}"
 
         title = title_el.text
 
@@ -127,6 +138,7 @@ class Commentary:
             "label": f"{title} by Sir R. C. Jebb",
             "urn": urn,
             "kind": "Commentary",
+            "about": about,
         }
 
 

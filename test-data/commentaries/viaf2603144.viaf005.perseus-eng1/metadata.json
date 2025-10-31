@@ -2,5 +2,6 @@
   "label": "Commentary on Sophocles: Electra by Sir R. C. Jebb",
   "urn": "urn:cts:greekLit:viaf2603144.viaf005.perseus-eng1",
   "kind": "Commentary",
+  "about": "urn:cts:greekLit:tlg0011.tlg005",
   "entries": "glossae_001.jsonl"
 }

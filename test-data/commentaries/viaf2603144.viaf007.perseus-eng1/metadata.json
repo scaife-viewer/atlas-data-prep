@@ -2,5 +2,6 @@
   "label": "Commentary on Sophocles: Trachiniae by Sir R. C. Jebb",
   "urn": "urn:cts:greekLit:viaf2603144.viaf007.perseus-eng1",
   "kind": "Commentary",
+  "about": "urn:cts:greekLit:tlg0011.tlg001",
   "entries": "glossae_001.jsonl"
 }
