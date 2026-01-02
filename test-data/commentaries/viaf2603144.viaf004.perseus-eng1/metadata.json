@@ -1,8 +1,7 @@
 {
-  "label": "Commentary on Sophocles: Ajax by Sir Richard C. Jebb",
+  "label": "Commentary on Sophocles: Ajax by Sir R. C. Jebb",
   "urn": "urn:cts:greekLit:viaf2603144.viaf004.perseus-eng1",
   "kind": "Commentary",
-  "entries": [
-    "glossae_001.jsonl"
-  ]
+  "about": "urn:cts:greekLit:tlg0011.tlg003",
+  "entries": "glossae_001.jsonl"
 }

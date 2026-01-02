@@ -14,20 +14,20 @@ import jsonlines
 import re
 from lxml import etree
 
-from works_greek import (
+from .works_greek import (
     GREEK_AUTH_URNS,
     GREEK_WORK_URNS,
     GREEK_AUTH_ABB,
     GREEK_SINGLE_WORK_AUTHORS,
 )
-from works_latin import (
+from .works_latin import (
     LATIN_AUTH_URNS,
     LATIN_WORK_URNS,
     LATIN_AUTH_ABB,
     LATIN_SINGLE_WORK_AUTHORS,
 )
-from works_other import OTHER_AUTH_ABB, OTHER_WORK_URNS, OTHER_AUTH_URNS
-from works_schol import SCHOL_AUTH_ABB, SCHOL_WORK_URNS, SCHOL_AUTH_URNS
+from .works_other import OTHER_AUTH_ABB, OTHER_WORK_URNS, OTHER_AUTH_URNS
+from .works_schol import SCHOL_AUTH_ABB, SCHOL_WORK_URNS, SCHOL_AUTH_URNS
 
 # check for duplicate keys betwen greek and latin works
 assert not set(GREEK_AUTH_URNS.keys()).intersection(LATIN_AUTH_URNS.keys())
