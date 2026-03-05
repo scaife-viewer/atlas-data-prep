@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from commentaries.scripts.convert_jebb import convert
+from commentaries.scripts.convert_commentaries import convert_commentaries
 
 if __name__ == "__main__":
-    convert()
+    convert_commentaries()

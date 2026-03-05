@@ -1,3 +1,4 @@
+```sh
 ./manage.py shell -c "from atlas.texts.ingestion import ingest_texts; ingest_texts(reset=True)"
 ./manage.py shell -c "from atlas.texts.ingestion import tokenize_all_text_parts; tokenize_all_text_parts(reset=True)"
 ./manage.py shell -c "from atlas.dictionaries.ingestion import ingest_dictionaries; ingest_dictionaries(reset=True)"
@@ -17,7 +18,7 @@ tar cvzf data.tar.gz data db
 
 scp data.tar.gz jtaube01@scaife-dev-01.perseus.tufts.edu:data.tar.gz
 scp data.tar.gz jtaube01@scaife-prod-01.perseus.tufts.edu:data.tar.gz
-
+```
 
 # token-annotations
     "scaife_viewer.atlas.importers.token_annotations.apply_token_annotations",
