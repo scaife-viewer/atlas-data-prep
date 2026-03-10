@@ -71,24 +71,26 @@ def collect_glosses(tei_file: Path, work_urn_fragment: str, commentary_base_urn:
                 if textpart_corresp.startswith(work_urn_fragment):
                     phi0474_urn = textpart_corresp
                 else:
-                    print(
-                        f"Incomplete @corresp attribute on {etree.tostring(textpart)}."
-                    )
+                    # print(
+                    #     f"Incomplete @corresp attribute on {etree.tostring(textpart)}."
+                    # )
 
-                    maybe_corresp = f"{work_urn_fragment}:{textpart_corresp}"
+                    # maybe_corresp = f"{work_urn_fragment}:{textpart_corresp}"
 
-                    print(f"Does this look correct? {maybe_corresp}")
-                    user_response = input(
-                        "Type 'y' to accept; otherwise, enter the URN manually.\n\n"
-                    )
+                    # print(f"Does this look correct? {maybe_corresp}")
+                    # user_response = input(
+                    #     "Type 'y' to accept; otherwise, enter the URN manually.\n\n"
+                    # )
 
-                    if user_response.lower() == "y":
-                        phi0474_urn = maybe_corresp
-                    else:
-                        phi0474_urn = user_response
+                    # if user_response.lower() == "y":
+                    #     phi0474_urn = maybe_corresp
+                    # else:
+                    #     phi0474_urn = user_response
+                    textpart_n = textpart.get("n")
+                    phi0474_urn = f"{work_urn_fragment}:{textpart_n}"
             else:
                 textpart_n = textpart.get("n")
-                phi0474_urn = f"{urn_prefix}:{textpart_n}"
+                phi0474_urn = f"{work_urn_fragment}:{textpart_n}"
 
             glosses.append(
                 Gloss(
@@ -105,15 +107,31 @@ def collect_glosses(tei_file: Path, work_urn_fragment: str, commentary_base_urn:
     return glosses
 
 
-def get_about_urn(cts_file: Path):
+def get_metadata(cts_file: Path):
     tree = read_file(cts_file)
+
+    title_el = tree.find(".//ti:title", namespaces=NAMESPACES)
+
+    assert title_el is not None, f"No title found for {urn}"
 
     about_el = tree.find(".//ti:about", namespaces=NAMESPACES)
 
-    return about_el.get("urn")
+    assert about_el is not None, f"No ti:about tag found for {urn}"
+
+    about = about_el.get("urn")
+
+    assert about is not None, f"No @urn attribute found on ti:about tag for {urn}"
+
+    title = title_el.text
+
+    return {
+        "label": title,
+        "kind": "Commentary",
+        "about": about,
+    }
 
 
-APPROVED_WORK_FRAGMENTS = ["sec002", "sec003a"]
+APPROVED_WORK_FRAGMENTS = ["sec002", "sec003a", "sec003b", "sec003c", "sec004"]
 
 OUT_ROOT = Path(__file__).resolve().parent.parent.parent / "test-data" / "commentaries"
 
@@ -123,24 +141,32 @@ def main():
         # sec001 is the introduction, which we
         # don't need to align
         if d.name not in APPROVED_WORK_FRAGMENTS:
+            print(f"Please check if {d.name} is ready for processing.")
             continue
         cts_file = d / "__cts__.xml"
         tei_file = d / f"sec00009.{d.name}.perseus-eng1.xml"
 
-        about_urn = get_about_urn(cts_file)
+        metadata = get_metadata(cts_file)
         commentary_urn = f"urn:cts:latinLit:sec00009.{d.name}.perseus-eng1"
 
-        glosses = collect_glosses(tei_file, about_urn, commentary_urn)
+        metadata["urn"] = commentary_urn
+
+        glosses = collect_glosses(tei_file, metadata["about"], commentary_urn)
 
         outdir = OUT_ROOT / f"sec00009.{d.name}.perseus-eng1"
 
         outdir.mkdir(exist_ok=True)
 
-        outfile = outdir / f"glossae_001.jsonl"
+        outfile = outdir / "glossae_001.jsonl"
 
         with open(outfile, "w", newline="") as f:
             for gloss in glosses:
                 print(json.dumps(asdict(gloss), ensure_ascii=False), file=f)
+
+        metadata_file = outdir / "metadata.json"
+
+        with open(metadata_file, "w") as fp:
+            json.dump(metadata, fp)
 
 
 if __name__ == "__main__":
