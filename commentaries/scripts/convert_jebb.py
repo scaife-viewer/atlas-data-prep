@@ -14,8 +14,8 @@ from .ref_to_urn import get_ref, get_urn
 
 logging.basicConfig(level=logging.INFO)
 
-SRC_DIR = Path(
-    os.getenv("JEBB_COMMENTARIES_ROOT", "canonical_pdlrefwk/data/viaf2603144")
+SRC_DIR = (
+    Path(os.getenv("PDLREFWK_ROOT", "canonical_pdlrefwk")) / "data" / "viaf2603144"
 )
 INTRO_DIRS = [d for d in SRC_DIR.iterdir() if str(d).endswith("i")]
 COMMENTARY_DIRS = [

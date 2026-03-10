@@ -15,7 +15,7 @@ from .convert_xml_to_json import convert_xml_to_json
 
 logging.basicConfig(level=logging.INFO)
 
-PDLREFWK_DATA_DIR = Path(os.getenv("TEST_DATA_DIR", "canonical_pdlrefwk/data"))
+PDLREFWK_DATA_DIR = Path(os.getenv("PDLREFWK_ROOT", "canonical_pdlrefwk")) / "data"
 
 
 def convert_commentaries():
