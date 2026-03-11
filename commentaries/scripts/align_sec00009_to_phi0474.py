@@ -5,9 +5,6 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from lxml import etree
-from lxml.sax import ElementTreeContentHandler
-
-from .sax import SAXParser, SectionTransformBuilder
 
 DIR = Path(os.getenv("PDLREFWK_ROOT")).resolve() / "data" / "sec00009"
 NAMESPACES = {
@@ -90,10 +87,17 @@ def collect_glosses(tei_file: Path, work_urn_fragment: str, commentary_base_urn:
                     # else:
                     #     phi0474_urn = user_response
                     textpart_n = textpart.get("n")
-                    phi0474_urn = f"{work_urn_fragment}:{textpart_n}"
+                    if len(work_urn_fragment.split(":")) > 4:
+                        phi0474_urn = f"{work_urn_fragment}.{textpart_n}"
+                    else:
+                        phi0474_urn = f"{work_urn_fragment}:{textpart_n}"
             else:
                 textpart_n = textpart.get("n")
-                phi0474_urn = f"{work_urn_fragment}:{textpart_n}"
+
+                if len(work_urn_fragment.split(":")) > 4:
+                    phi0474_urn = f"{work_urn_fragment}.{textpart_n}"
+                else:
+                    phi0474_urn = f"{work_urn_fragment}:{textpart_n}"
 
             glosses.append(
                 Gloss(
@@ -134,7 +138,17 @@ def get_metadata(cts_file: Path):
     }
 
 
-APPROVED_WORK_FRAGMENTS = ["sec002", "sec003a", "sec003b", "sec003c", "sec004"]
+APPROVED_WORK_FRAGMENTS = [
+    "sec002",
+    "sec003a",
+    "sec003b",
+    "sec003c",
+    "sec004",
+    "sec005a",
+    "sec005b",
+    "sec005c",
+    "sec005d",
+]
 
 OUT_ROOT = Path(__file__).resolve().parent.parent.parent / "test-data" / "commentaries"
 
@@ -170,3 +184,6 @@ def process_sec00009():
 
         with open(metadata_file, "w") as fp:
             json.dump(metadata, fp)
+
+if __name__ == "__main__":
+    process_sec00009()
