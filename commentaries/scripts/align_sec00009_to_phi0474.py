@@ -5,6 +5,9 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from lxml import etree
+from lxml.sax import ElementTreeContentHandler
+
+from .sax import SAXParser, SectionTransformBuilder
 
 DIR = Path(os.getenv("PDLREFWK_ROOT")).resolve() / "data" / "sec00009"
 NAMESPACES = {
@@ -136,7 +139,7 @@ APPROVED_WORK_FRAGMENTS = ["sec002", "sec003a", "sec003b", "sec003c", "sec004"]
 OUT_ROOT = Path(__file__).resolve().parent.parent.parent / "test-data" / "commentaries"
 
 
-def main():
+def process_sec00009():
     for d in SUBDIRS:
         # sec001 is the introduction, which we
         # don't need to align
@@ -167,7 +170,3 @@ def main():
 
         with open(metadata_file, "w") as fp:
             json.dump(metadata, fp)
-
-
-if __name__ == "__main__":
-    main()
