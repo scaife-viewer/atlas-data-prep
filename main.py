@@ -13,7 +13,7 @@ from commentaries.scripts.sax import SectionTransformBuilder
 
 
 def convert_divs_and_milestones():
-    p = "/Users/pletcher/code/PerseusDL/canonical_pdlrefwk/data/sec00009/sec005d/sec00009.sec005d.perseus-eng1.xml"
+    p = "/Users/pletcher/code/PerseusDL/canonical_pdlrefwk/data/sec00009/sec006/sec00009.sec006.perseus-eng1.xml"
     tree = etree.parse(Path(p))
 
     handler = ElementTreeContentHandler()

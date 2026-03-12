@@ -71,21 +71,6 @@ def collect_glosses(tei_file: Path, work_urn_fragment: str, commentary_base_urn:
                 if textpart_corresp.startswith(work_urn_fragment):
                     phi0474_urn = textpart_corresp
                 else:
-                    # print(
-                    #     f"Incomplete @corresp attribute on {etree.tostring(textpart)}."
-                    # )
-
-                    # maybe_corresp = f"{work_urn_fragment}:{textpart_corresp}"
-
-                    # print(f"Does this look correct? {maybe_corresp}")
-                    # user_response = input(
-                    #     "Type 'y' to accept; otherwise, enter the URN manually.\n\n"
-                    # )
-
-                    # if user_response.lower() == "y":
-                    #     phi0474_urn = maybe_corresp
-                    # else:
-                    #     phi0474_urn = user_response
                     textpart_n = textpart.get("n")
                     if len(work_urn_fragment.split(":")) > 4:
                         phi0474_urn = f"{work_urn_fragment}.{textpart_n}"
@@ -148,6 +133,11 @@ APPROVED_WORK_FRAGMENTS = [
     "sec005b",
     "sec005c",
     "sec005d",
+    "sec006",
+    "sec007",
+    "sec008",
+    "sec009",
+    "sec010",
 ]
 
 OUT_ROOT = Path(__file__).resolve().parent.parent.parent / "test-data" / "commentaries"
