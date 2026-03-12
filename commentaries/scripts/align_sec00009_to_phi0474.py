@@ -6,6 +6,8 @@ from pathlib import Path
 
 from lxml import etree
 
+from .conversion_utils import to_xml
+
 DIR = Path(os.getenv("PDLREFWK_ROOT")).resolve() / "data" / "sec00009"
 NAMESPACES = {
     "tei": "http://www.tei-c.org/ns/1.0",
@@ -88,9 +90,7 @@ def collect_glosses(tei_file: Path, work_urn_fragment: str, commentary_base_urn:
                 Gloss(
                     urn=f"{commentary_base_urn}:{len(glosses) + 1}",
                     corresp=phi0474_urn,
-                    content=etree.tostring(
-                        gloss, xml_declaration=False, encoding="unicode"
-                    ),
+                    content=to_xml(gloss),
                     citations=[],
                     lemma=lemma,
                 )
@@ -120,6 +120,7 @@ def get_metadata(cts_file: Path):
         "label": title,
         "kind": "Commentary",
         "about": about,
+        "entries": "glossae_001.jsonl",
     }
 
 

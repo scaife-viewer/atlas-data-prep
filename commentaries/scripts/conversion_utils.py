@@ -1,3 +1,7 @@
+import re
+
+from lxml import etree
+
 def to_xml(el):
     return re.sub(
         r"\s+",

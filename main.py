@@ -9,6 +9,7 @@ from pathlib import Path
 from lxml import etree
 from lxml.sax import ElementTreeContentHandler, saxify
 
+from commentaries.scripts.align_sec00009_to_phi0474 import process_sec00009
 from commentaries.scripts.sax import SectionTransformBuilder
 
 
@@ -27,4 +28,4 @@ def convert_divs_and_milestones():
 
 
 if __name__ == "__main__":
-    convert_divs_and_milestones()
+    process_sec00009()
